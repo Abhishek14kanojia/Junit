@@ -44,5 +44,4 @@ public class mainuserRegistrationTest {
 		boolean expected = true;
 		Assertions.assertEquals(expected, actual);
 	}
-	
 }

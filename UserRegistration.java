@@ -40,5 +40,11 @@ public boolean Email(String email) {
 		return matcher.matches();
 		
 	}
-
+	public boolean emailIds(String emailsIds) {
+		String Regex = "^[a-zA-Z0-9]+([._+-][0-9A-Za-z]+)*@[a-zA-Z0-9]+.[a-zA-Z]{2,4}([.][a-z]{2,4})?$";
+		Pattern pattern = Pattern.compile(Regex);
+		Matcher matcher = pattern.matcher(emailsIds);
+		return matcher.matches();
+		
+	}
 }
